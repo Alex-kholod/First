@@ -4,12 +4,11 @@
 #include <iostream>
 using namespace std;
 
-class vector
+class Vector
 {
 private:
 	double x = 0;
 	double y = 0;
-	double z = 0;
 public:
 	double GetX()
 	{
@@ -27,23 +26,23 @@ public:
 	{
 		y = valueY;
 	}
-	double GetZ()
+	/*double GetZ()
 	{
 		return z;
 	}
 	void SetZ(double valueZ)
 	{
 		z = valueZ;
-	}
+	}*/
 	void print()
 	{
 		cout << "(" << x << "," << y << ")" << endl;
 	}
-	void multiplication();
-	void vector_length();
+	double multiplication();
+	double vector_length();
 };
 
-class circle
+class Circle
 {
 private:
 	double R=0;
@@ -56,8 +55,38 @@ public:
 	{
 		R = valueR;
 	}
-	void square();
-	void circle_length();
+	double square();
+	double circle_length();
 };
 
+class Complex
+{
+private:
+	double re = 0;
+	double im = 0;
+public:
+	double GetIM()
+	{
+		return im;
+	}
+	void SetIM(double valueIM)
+	{
+		im = valueIM;
+	}
+	double GetRE()
+	{
+		return re;
+	}
+	void SetRE(double valueRE)
+	{
+		re = valueRE;
+	}
+	Complex sum(Complex a);
+	Complex difference(Complex a);
+	Complex multip(Complex a);
+	double division(Complex a);
+};
+void Print(double, double);
+//void Print(double x, double y);
+//double absolute(Complex a);
 #endif

@@ -24,6 +24,7 @@
     <ProjectGuid>{415caec6-ff16-4103-8980-8fe9ce2e6638}</ProjectGuid>
     <RootNamespace>ThirdProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>DZ3</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +141,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="general.cpp" />
-    <ClCompile Include="Header.cpp" />
     <ClCompile Include="ThirdProject.cpp" />
   </ItemGroup>
   <ItemGroup>
